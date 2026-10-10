@@ -11,7 +11,7 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm install && npm install qrcode-terminal
+RUN npm install --legacy-peer-deps && npm install qrcode-terminal --legacy-peer-deps
 
 COPY . .
 
